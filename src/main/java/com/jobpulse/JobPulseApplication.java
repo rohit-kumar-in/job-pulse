@@ -1,0 +1,14 @@
+package com.jobpulse;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+
+@SpringBootApplication
+@EnableJpaAuditing
+public class JobPulseApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(JobPulseApplication.class, args);
+    }
+}

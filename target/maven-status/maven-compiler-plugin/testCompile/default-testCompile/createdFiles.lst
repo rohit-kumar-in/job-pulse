@@ -1,0 +1,3 @@
+com\jobpulse\application\service\ApplicationServiceTest.class
+com\jobpulse\JobPulseIntegrationTest.class
+com\jobpulse\application\service\AtsScoringServiceTest.class

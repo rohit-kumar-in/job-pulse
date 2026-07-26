@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.jobpulse.JobPulseIntegrationTest" time="14.543" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\rkumar72\Downloads\startup2\target\test-classes;C:\Users\rkumar72\Downloads\startup2\target\classes;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.2\spring-boot-starter-web-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.2\spring-boot-starter-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot\3.3.2\spring-boot-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.2\spring-boot-autoconfigure-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.2\spring-boot-starter-logging-3.3.2.jar;C:\Users\rkumar72\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\rkumar72\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\rkumar72\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\rkumar72\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\rkumar72\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\rkumar72\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\rkumar72\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.2\spring-boot-starter-json-3.3.2.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.2\spring-boot-starter-tomcat-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.26\tomcat-embed-core-10.1.26.jar;C:\Users\rkumar72\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.26\tomcat-embed-websocket-10.1.26.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-web\6.1.11\spring-web-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-beans\6.1.11\spring-beans-6.1.11.jar;C:\Users\rkumar72\.m2\repository\io\micrometer\micrometer-observation\1.13.2\micrometer-observation-1.13.2.jar;C:\Users\rkumar72\.m2\repository\io\micrometer\micrometer-commons\1.13.2\micrometer-commons-1.13.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-webmvc\6.1.11\spring-webmvc-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-context\6.1.11\spring-context-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-expression\6.1.11\spring-expression-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.2\spring-boot-starter-data-jpa-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.2\spring-boot-starter-aop-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.2\spring-boot-starter-jdbc-3.3.2.jar;C:\Users\rkumar72\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-jdbc\6.1.11\spring-jdbc-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar;C:\Users\rkumar72\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\rkumar72\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\rkumar72\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\rkumar72\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\rkumar72\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\rkumar72\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\rkumar72\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\rkumar72\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\rkumar72\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\rkumar72\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\rkumar72\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\rkumar72\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\rkumar72\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\rkumar72\.m2\repository\org\springframework\data\spring-data-jpa\3.3.2\spring-data-jpa-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\data\spring-data-commons\3.3.2\spring-data-commons-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-orm\6.1.11\spring-orm-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-tx\6.1.11\spring-tx-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-aspects\6.1.11\spring-aspects-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.2\spring-boot-starter-security-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-aop\6.1.11\spring-aop-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\security\spring-security-config\6.3.1\spring-security-config-6.3.1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\security\spring-security-web\6.3.1\spring-security-web-6.3.1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.2\spring-boot-starter-validation-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.26\tomcat-embed-el-10.1.26.jar;C:\Users\rkumar72\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\rkumar72\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\rkumar72\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\rkumar72\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\rkumar72\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\rkumar72\.m2\repository\org\flywaydb\flyway-core\10.10.0\flyway-core-10.10.0.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-toml\2.17.2\jackson-dataformat-toml-2.17.2.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\rkumar72\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\rkumar72\.m2\repository\org\flywaydb\flyway-database-postgresql\10.10.0\flyway-database-postgresql-10.10.0.jar;C:\Users\rkumar72\.m2\repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;C:\Users\rkumar72\.m2\repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;C:\Users\rkumar72\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\rkumar72\.m2\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar;C:\Users\rkumar72\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.5.0\springdoc-openapi-starter-webmvc-ui-2.5.0.jar;C:\Users\rkumar72\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.5.0\springdoc-openapi-starter-webmvc-api-2.5.0.jar;C:\Users\rkumar72\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.5.0\springdoc-openapi-starter-common-2.5.0.jar;C:\Users\rkumar72\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.21\swagger-core-jakarta-2.2.21.jar;C:\Users\rkumar72\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\rkumar72\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.21\swagger-annotations-jakarta-2.2.21.jar;C:\Users\rkumar72\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.21\swagger-models-jakarta-2.2.21.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.2\jackson-dataformat-yaml-2.17.2.jar;C:\Users\rkumar72\.m2\repository\org\webjars\swagger-ui\5.13.0\swagger-ui-5.13.0.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.2\spring-boot-starter-test-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-test\3.3.2\spring-boot-test-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.2\spring-boot-test-autoconfigure-3.3.2.jar;C:\Users\rkumar72\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\rkumar72\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\rkumar72\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\rkumar72\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\rkumar72\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\rkumar72\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\rkumar72\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\rkumar72\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\rkumar72\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\rkumar72\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\rkumar72\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\rkumar72\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\rkumar72\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\rkumar72\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\rkumar72\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\rkumar72\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\rkumar72\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\rkumar72\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\rkumar72\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.18\byte-buddy-agent-1.14.18.jar;C:\Users\rkumar72\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\rkumar72\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\rkumar72\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\rkumar72\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-core\6.1.11\spring-core-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-jcl\6.1.11\spring-jcl-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-test\6.1.11\spring-test-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\security\spring-security-test\6.3.1\spring-security-test-6.3.1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\security\spring-security-core\6.3.1\spring-security-core-6.3.1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\security\spring-security-crypto\6.3.1\spring-security-crypto-6.3.1.jar;"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\rkumar72\.jdks\ms-17.0.18\bin"/>
+    <property name="sun.java.command" value="C:\Users\rkumar72\AppData\Local\Temp\surefire7165255898616714268\surefirebooter-20260726214707884_3.jar C:\Users\rkumar72\AppData\Local\Temp\surefire7165255898616714268 2026-07-26T21-47-07_407-jvmRun1 surefire-20260726214707884_1tmp surefire_0-20260726214707884_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\rkumar72\Downloads\startup2\target\test-classes;C:\Users\rkumar72\Downloads\startup2\target\classes;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.2\spring-boot-starter-web-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.2\spring-boot-starter-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot\3.3.2\spring-boot-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.2\spring-boot-autoconfigure-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.2\spring-boot-starter-logging-3.3.2.jar;C:\Users\rkumar72\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\rkumar72\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\rkumar72\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\rkumar72\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\rkumar72\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\rkumar72\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\rkumar72\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.2\spring-boot-starter-json-3.3.2.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.2\spring-boot-starter-tomcat-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.26\tomcat-embed-core-10.1.26.jar;C:\Users\rkumar72\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.26\tomcat-embed-websocket-10.1.26.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-web\6.1.11\spring-web-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-beans\6.1.11\spring-beans-6.1.11.jar;C:\Users\rkumar72\.m2\repository\io\micrometer\micrometer-observation\1.13.2\micrometer-observation-1.13.2.jar;C:\Users\rkumar72\.m2\repository\io\micrometer\micrometer-commons\1.13.2\micrometer-commons-1.13.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-webmvc\6.1.11\spring-webmvc-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-context\6.1.11\spring-context-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-expression\6.1.11\spring-expression-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.2\spring-boot-starter-data-jpa-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.2\spring-boot-starter-aop-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.2\spring-boot-starter-jdbc-3.3.2.jar;C:\Users\rkumar72\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-jdbc\6.1.11\spring-jdbc-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar;C:\Users\rkumar72\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\rkumar72\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\rkumar72\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\rkumar72\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\rkumar72\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\rkumar72\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\rkumar72\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\rkumar72\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\rkumar72\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\rkumar72\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\rkumar72\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\rkumar72\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\rkumar72\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\rkumar72\.m2\repository\org\springframework\data\spring-data-jpa\3.3.2\spring-data-jpa-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\data\spring-data-commons\3.3.2\spring-data-commons-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-orm\6.1.11\spring-orm-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-tx\6.1.11\spring-tx-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-aspects\6.1.11\spring-aspects-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.2\spring-boot-starter-security-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-aop\6.1.11\spring-aop-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\security\spring-security-config\6.3.1\spring-security-config-6.3.1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\security\spring-security-web\6.3.1\spring-security-web-6.3.1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.2\spring-boot-starter-validation-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.26\tomcat-embed-el-10.1.26.jar;C:\Users\rkumar72\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\rkumar72\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\rkumar72\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\rkumar72\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\rkumar72\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\rkumar72\.m2\repository\org\flywaydb\flyway-core\10.10.0\flyway-core-10.10.0.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-toml\2.17.2\jackson-dataformat-toml-2.17.2.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\rkumar72\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\rkumar72\.m2\repository\org\flywaydb\flyway-database-postgresql\10.10.0\flyway-database-postgresql-10.10.0.jar;C:\Users\rkumar72\.m2\repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;C:\Users\rkumar72\.m2\repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;C:\Users\rkumar72\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\rkumar72\.m2\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar;C:\Users\rkumar72\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.5.0\springdoc-openapi-starter-webmvc-ui-2.5.0.jar;C:\Users\rkumar72\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.5.0\springdoc-openapi-starter-webmvc-api-2.5.0.jar;C:\Users\rkumar72\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.5.0\springdoc-openapi-starter-common-2.5.0.jar;C:\Users\rkumar72\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.21\swagger-core-jakarta-2.2.21.jar;C:\Users\rkumar72\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\rkumar72\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.21\swagger-annotations-jakarta-2.2.21.jar;C:\Users\rkumar72\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.21\swagger-models-jakarta-2.2.21.jar;C:\Users\rkumar72\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.2\jackson-dataformat-yaml-2.17.2.jar;C:\Users\rkumar72\.m2\repository\org\webjars\swagger-ui\5.13.0\swagger-ui-5.13.0.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.2\spring-boot-starter-test-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-test\3.3.2\spring-boot-test-3.3.2.jar;C:\Users\rkumar72\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.2\spring-boot-test-autoconfigure-3.3.2.jar;C:\Users\rkumar72\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\rkumar72\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\rkumar72\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\rkumar72\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\rkumar72\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\rkumar72\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\rkumar72\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\rkumar72\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\rkumar72\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\rkumar72\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\rkumar72\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\rkumar72\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\rkumar72\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\rkumar72\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\rkumar72\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\rkumar72\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\rkumar72\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\rkumar72\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\rkumar72\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.18\byte-buddy-agent-1.14.18.jar;C:\Users\rkumar72\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\rkumar72\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\rkumar72\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\rkumar72\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-core\6.1.11\spring-core-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-jcl\6.1.11\spring-jcl-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\springframework\spring-test\6.1.11\spring-test-6.1.11.jar;C:\Users\rkumar72\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\security\spring-security-test\6.3.1\spring-security-test-6.3.1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\security\spring-security-core\6.3.1\spring-security-core-6.3.1.jar;C:\Users\rkumar72\.m2\repository\org\springframework\security\spring-security-crypto\6.3.1\spring-security-crypto-6.3.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\rkumar72"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Users\rkumar72\.jdks\ms-17.0.18"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\rkumar72\Downloads\startup2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="windows-1252"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\rkumar72\AppData\Local\Temp\surefire7165255898616714268\surefirebooter-20260726214707884_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.18+8-LTS"/>
+    <property name="user.name" value="rkumar72"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Microsoft-13106358"/>
+    <property name="localRepository" value="C:\Users\rkumar72\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\rkumar72\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="17.0.18"/>
+    <property name="user.dir" value="C:\Users\rkumar72\Downloads\startup2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="29896"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\rkumar72\.jdks\ms-17.0.18\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Users/rkumar72/.gemini/antigravity-ide/bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Users\rkumar72\.jdks\ms-17.0.18\bin;C:\Program Files\Git\cmd;C:\apache-maven-3.9.15\bin;C:\Users\rkumar72\.local\bin;C:\Users\rkumar72\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\rkumar72\AppData\Local\Programs\Python\Python313\;C:\Users\rkumar72\AppData\Local\Programs\Python\Launcher\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Users\rkumar72\.jdks\ms-17.0.18\bin;C:\Program Files\Git\cmd;C:\apache-maven-3.9.15\bin;C:\Users\rkumar72\.local\bin;c:\Users\rkumar72\AppData\Local\Programs\cursor\resources\app\codeBin;C:\Users\rkumar72\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1\bin;C:\Users\rkumar72\AppData\Roaming\npm;C:\Users\rkumar72\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\rkumar72\AppData\Local\Programs\Antigravity\bin;C:\Users\rkumar72\AppData\Local\Programs\Ollama;C:\Users\rkumar72\AppData\Local\agy\bin;C:\Users\rkumar72\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\rkumar72\AppData\Local\Programs\Amazon\AWSCLIV2\;C:\Users\rkumar72\.deno\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="17.0.18+8-LTS"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[jobpulse-backend-test] "/>
+  </properties>
+  <testcase name="testEndToEndRecruitmentFlow" classname="com.jobpulse.JobPulseIntegrationTest" time="2.553">
+    <system-out><![CDATA[21:47:14.575 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.jobpulse.JobPulseIntegrationTest]: JobPulseIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:47:14.859 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.jobpulse.JobPulseApplication for test class com.jobpulse.JobPulseIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2026-07-26T21:47:15.961+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.JobPulseIntegrationTest     : Starting JobPulseIntegrationTest using Java 17.0.18 with PID 29896 (started by rkumar72 in C:\Users\rkumar72\Downloads\startup2)
+2026-07-26T21:47:15.971+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.JobPulseIntegrationTest     : Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-26T21:47:15.972+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.JobPulseIntegrationTest     : The following 1 profile is active: "test"
+2026-07-26T21:47:17.911+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-26T21:47:18.103+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170 ms. Found 6 JPA repository interfaces.
+2026-07-26T21:47:19.570+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-26T21:47:19.767+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-26T21:47:19.878+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-26T21:47:20.246+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-26T21:47:20.337+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-26T21:47:20.755+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:jobpulse_test_db user=SA
+2026-07-26T21:47:20.755+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-26T21:47:20.808+05:30  WARN 29896 --- [jobpulse-backend-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-26T21:47:22.416+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-26T21:47:22.447+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    drop table if exists applications cascade 
+2026-07-26T21:47:22.447+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    drop table if exists candidate_profile cascade 
+2026-07-26T21:47:22.447+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    drop table if exists candidate_skills cascade 
+2026-07-26T21:47:22.447+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    drop table if exists companies cascade 
+2026-07-26T21:47:22.447+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    drop table if exists job_skills cascade 
+2026-07-26T21:47:22.447+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    drop table if exists jobs cascade 
+2026-07-26T21:47:22.447+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    drop table if exists skills cascade 
+2026-07-26T21:47:22.447+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    drop table if exists users cascade 
+2026-07-26T21:47:22.463+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    create table applications (
+        ats_score float(53) not null,
+        applied_at timestamp(6) not null,
+        candidate_id bigint not null,
+        id bigint generated by default as identity,
+        job_id bigint not null,
+        status enum ('ACCEPTED','APPLIED','REJECTED','REVIEWED') not null,
+        primary key (id),
+        constraint unique_job_candidate unique (job_id, candidate_id)
+    )
+2026-07-26T21:47:22.483+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    create table candidate_profile (
+        experience integer not null,
+        id bigint generated by default as identity,
+        user_id bigint not null unique,
+        location varchar(255),
+        resume_url varchar(255),
+        primary key (id)
+    )
+2026-07-26T21:47:22.485+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    create table candidate_skills (
+        candidate_id bigint not null,
+        skill_id bigint not null,
+        primary key (candidate_id, skill_id)
+    )
+2026-07-26T21:47:22.487+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    create table companies (
+        id bigint generated by default as identity,
+        name varchar(255) not null,
+        website varchar(255),
+        primary key (id)
+    )
+2026-07-26T21:47:22.488+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    create table job_skills (
+        job_id bigint not null,
+        skill_id bigint not null,
+        primary key (job_id, skill_id)
+    )
+2026-07-26T21:47:22.490+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    create table jobs (
+        experience integer not null,
+        salary numeric(15,2),
+        company_id bigint not null,
+        created_at timestamp(6) not null,
+        id bigint generated by default as identity,
+        description TEXT not null,
+        location varchar(255) not null,
+        title varchar(255) not null,
+        status enum ('ACTIVE','INACTIVE') not null,
+        primary key (id)
+    )
+2026-07-26T21:47:22.491+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    create table skills (
+        id bigint generated by default as identity,
+        name varchar(255) not null unique,
+        primary key (id)
+    )
+2026-07-26T21:47:22.493+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    create table users (
+        created_at timestamp(6) not null,
+        id bigint generated by default as identity,
+        email varchar(255) not null unique,
+        name varchar(255) not null,
+        password varchar(255) not null,
+        role enum ('ADMIN','CANDIDATE','RECRUITER') not null,
+        primary key (id)
+    )
+2026-07-26T21:47:22.495+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    alter table if exists applications 
+       add constraint FKn9mqus0yf7icqcfp3ij691g78 
+       foreign key (candidate_id) 
+       references candidate_profile
+2026-07-26T21:47:22.513+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    alter table if exists applications 
+       add constraint FK65weib1lru9dkrbto5pv389vi 
+       foreign key (job_id) 
+       references jobs
+2026-07-26T21:47:22.514+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    alter table if exists candidate_profile 
+       add constraint FKdnxpt1u3e0cf9s72bklyrnlkd 
+       foreign key (user_id) 
+       references users
+2026-07-26T21:47:22.515+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    alter table if exists candidate_skills 
+       add constraint FK2fcvgl75ge1wjul9sq4e6aww3 
+       foreign key (skill_id) 
+       references skills
+2026-07-26T21:47:22.516+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    alter table if exists candidate_skills 
+       add constraint FK5bguhvkqdfv6458gyiqtlg6u0 
+       foreign key (candidate_id) 
+       references candidate_profile
+2026-07-26T21:47:22.517+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    alter table if exists job_skills 
+       add constraint FKe10ho7um0atjm67b9dgokmfyx 
+       foreign key (skill_id) 
+       references skills
+2026-07-26T21:47:22.517+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    alter table if exists job_skills 
+       add constraint FK1gb74tysr9vkypwivvvovxq1f 
+       foreign key (job_id) 
+       references jobs
+2026-07-26T21:47:22.520+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    alter table if exists jobs 
+       add constraint FKrtmqcrktb6s7xq8djbs2a2war 
+       foreign key (company_id) 
+       references companies
+2026-07-26T21:47:22.527+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26T21:47:23.210+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-26T21:47:24.292+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-26T21:47:24.294+05:30  WARN 29896 --- [jobpulse-backend-test] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-07-26T21:47:24.591+05:30  WARN 29896 --- [jobpulse-backend-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-26T21:47:26.195+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] c.j.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-07-26T21:47:26.197+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-07-26T21:47:26.198+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-07-26T21:47:26.200+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-07-26T21:47:26.247+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.JobPulseIntegrationTest     : Started JobPulseIntegrationTest in 11.025 seconds (process running for 17.087)
+2026-07-26T21:47:26.875+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    fetch
+        first ? rows only
+2026-07-26T21:47:27.156+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (created_at, email, name, password, role, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2026-07-26T21:47:27.199+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.auth.service.AuthService    : User registered successfully. ID: 1, Email: john@recruiter.com, Role: RECRUITER
+2026-07-26T21:47:27.248+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name,
+        c1_0.website 
+    from
+        companies c1_0 
+    where
+        c1_0.name=?
+2026-07-26T21:47:27.251+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        companies
+        (name, website, id) 
+    values
+        (?, ?, default)
+2026-07-26T21:47:27.253+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.auth.service.AuthService    : Recruiter associated with company: ID=1, Name=Acme Tech
+2026-07-26T21:47:27.381+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-07-26T21:47:27.650+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.security.JwtTokenProvider   : JWT token successfully issued for user: john@recruiter.com
+2026-07-26T21:47:27.815+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-07-26T21:47:27.866+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-07-26T21:47:27.883+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name,
+        c1_0.website 
+    from
+        companies c1_0 
+    where
+        c1_0.id=?
+2026-07-26T21:47:27.900+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+2026-07-26T21:47:27.900+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        skills
+        (name, id) 
+    values
+        (?, default)
+2026-07-26T21:47:27.900+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+2026-07-26T21:47:27.900+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        skills
+        (name, id) 
+    values
+        (?, default)
+2026-07-26T21:47:27.900+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+2026-07-26T21:47:27.900+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        skills
+        (name, id) 
+    values
+        (?, default)
+2026-07-26T21:47:27.932+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        jobs
+        (company_id, created_at, description, experience, location, salary, status, title, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+2026-07-26T21:47:27.936+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.job.service.JobService      : Job created successfully: ID=1, Title=Senior Java Engineer, Company=Acme Tech
+2026-07-26T21:47:27.969+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+2026-07-26T21:47:27.970+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+2026-07-26T21:47:27.970+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+2026-07-26T21:47:28.104+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    fetch
+        first ? rows only
+2026-07-26T21:47:28.198+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (created_at, email, name, password, role, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2026-07-26T21:47:28.198+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.auth.service.AuthService    : User registered successfully. ID: 2, Email: alice@test.com, Role: CANDIDATE
+2026-07-26T21:47:28.205+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+2026-07-26T21:47:28.205+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+2026-07-26T21:47:28.205+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+2026-07-26T21:47:28.205+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        candidate_profile
+        (experience, location, resume_url, user_id, id) 
+    values
+        (?, ?, ?, ?, default)
+2026-07-26T21:47:28.205+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.auth.service.AuthService    : Candidate profile created for User ID: 2
+2026-07-26T21:47:28.214+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-07-26T21:47:28.312+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.security.JwtTokenProvider   : JWT token successfully issued for user: alice@test.com
+2026-07-26T21:47:28.313+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        candidate_skills
+        (candidate_id, skill_id) 
+    values
+        (?, ?)
+2026-07-26T21:47:28.314+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        candidate_skills
+        (candidate_id, skill_id) 
+    values
+        (?, ?)
+2026-07-26T21:47:28.314+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        candidate_skills
+        (candidate_id, skill_id) 
+    values
+        (?, ?)
+2026-07-26T21:47:28.314+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    fetch
+        first ? rows only
+2026-07-26T21:47:28.420+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (created_at, email, name, password, role, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2026-07-26T21:47:28.421+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.auth.service.AuthService    : User registered successfully. ID: 3, Email: bob@test.com, Role: CANDIDATE
+2026-07-26T21:47:28.424+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+2026-07-26T21:47:28.426+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        candidate_profile
+        (experience, location, resume_url, user_id, id) 
+    values
+        (?, ?, ?, ?, default)
+2026-07-26T21:47:28.427+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.auth.service.AuthService    : Candidate profile created for User ID: 3
+2026-07-26T21:47:28.430+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-07-26T21:47:28.523+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] com.jobpulse.security.JwtTokenProvider   : JWT token successfully issued for user: bob@test.com
+2026-07-26T21:47:28.523+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        candidate_skills
+        (candidate_id, skill_id) 
+    values
+        (?, ?)
+2026-07-26T21:47:28.535+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-07-26T21:47:28.543+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        j1_0.id,
+        j1_0.company_id,
+        j1_0.created_at,
+        j1_0.description,
+        j1_0.experience,
+        j1_0.location,
+        j1_0.salary,
+        j1_0.status,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.id=?
+2026-07-26T21:47:28.564+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        cp1_0.id,
+        cp1_0.experience,
+        cp1_0.location,
+        cp1_0.resume_url,
+        cp1_0.user_id 
+    from
+        candidate_profile cp1_0 
+    join
+        users u1_0 
+            on u1_0.id=cp1_0.user_id 
+    where
+        u1_0.email=?
+2026-07-26T21:47:28.581+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        a1_0.id 
+    from
+        applications a1_0 
+    where
+        a1_0.job_id=? 
+        and a1_0.candidate_id=? 
+    fetch
+        first ? rows only
+2026-07-26T21:47:28.583+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+2026-07-26T21:47:28.601+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.candidate_id,
+        s1_1.id,
+        s1_1.name 
+    from
+        candidate_skills s1_0 
+    join
+        skills s1_1 
+            on s1_1.id=s1_0.skill_id 
+    where
+        s1_0.candidate_id=?
+2026-07-26T21:47:28.603+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] c.j.a.service.AtsScoringService          : ATS Calculation - Matched: 3 / Required: 3 -> Score: 100.0%
+2026-07-26T21:47:28.609+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        applications
+        (applied_at, ats_score, candidate_id, job_id, status, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2026-07-26T21:47:28.610+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] c.j.a.service.ApplicationService         : Application submitted - Application ID: 1, Job ID: 1, Candidate Email: alice@test.com, ATS Score: 100.0%
+2026-07-26T21:47:28.610+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name,
+        c1_0.website 
+    from
+        companies c1_0 
+    where
+        c1_0.id=?
+2026-07-26T21:47:28.616+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-07-26T21:47:28.631+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-07-26T21:47:28.631+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        j1_0.id,
+        j1_0.company_id,
+        j1_0.created_at,
+        j1_0.description,
+        j1_0.experience,
+        j1_0.location,
+        j1_0.salary,
+        j1_0.status,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.id=?
+2026-07-26T21:47:28.631+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        cp1_0.id,
+        cp1_0.experience,
+        cp1_0.location,
+        cp1_0.resume_url,
+        cp1_0.user_id 
+    from
+        candidate_profile cp1_0 
+    join
+        users u1_0 
+            on u1_0.id=cp1_0.user_id 
+    where
+        u1_0.email=?
+2026-07-26T21:47:28.647+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        a1_0.id 
+    from
+        applications a1_0 
+    where
+        a1_0.job_id=? 
+        and a1_0.candidate_id=? 
+    fetch
+        first ? rows only
+2026-07-26T21:47:28.647+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+2026-07-26T21:47:28.647+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.candidate_id,
+        s1_1.id,
+        s1_1.name 
+    from
+        candidate_skills s1_0 
+    join
+        skills s1_1 
+            on s1_1.id=s1_0.skill_id 
+    where
+        s1_0.candidate_id=?
+2026-07-26T21:47:28.647+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] c.j.a.service.AtsScoringService          : ATS Calculation - Matched: 1 / Required: 3 -> Score: 33.33%
+2026-07-26T21:47:28.647+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        applications
+        (applied_at, ats_score, candidate_id, job_id, status, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2026-07-26T21:47:28.647+05:30  INFO 29896 --- [jobpulse-backend-test] [           main] c.j.a.service.ApplicationService         : Application submitted - Application ID: 2, Job ID: 1, Candidate Email: bob@test.com, ATS Score: 33.33%
+2026-07-26T21:47:28.647+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name,
+        c1_0.website 
+    from
+        companies c1_0 
+    where
+        c1_0.id=?
+2026-07-26T21:47:28.647+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-07-26T21:47:28.664+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-07-26T21:47:28.664+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        j1_0.id,
+        j1_0.company_id,
+        j1_0.created_at,
+        j1_0.description,
+        j1_0.experience,
+        j1_0.location,
+        j1_0.salary,
+        j1_0.status,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.id=?
+2026-07-26T21:47:28.664+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        cp1_0.id,
+        cp1_0.experience,
+        cp1_0.location,
+        cp1_0.resume_url,
+        cp1_0.user_id 
+    from
+        candidate_profile cp1_0 
+    join
+        users u1_0 
+            on u1_0.id=cp1_0.user_id 
+    where
+        u1_0.email=?
+2026-07-26T21:47:28.664+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        a1_0.id 
+    from
+        applications a1_0 
+    where
+        a1_0.job_id=? 
+        and a1_0.candidate_id=? 
+    fetch
+        first ? rows only
+2026-07-26T21:47:28.680+05:30 ERROR 29896 --- [jobpulse-backend-test] [           main] c.j.exception.GlobalExceptionHandler     : Duplicate application exception: Candidate cannot apply twice for the same job
+2026-07-26T21:47:28.681+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-07-26T21:47:28.731+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        jobs j1_0 
+    where
+        j1_0.id=?
+2026-07-26T21:47:28.787+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.ats_score,
+        a1_0.candidate_id,
+        c1_0.id,
+        c1_0.experience,
+        c1_0.location,
+        c1_0.resume_url,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role,
+        a1_0.job_id,
+        j1_0.id,
+        j1_0.company_id,
+        j1_0.created_at,
+        j1_0.description,
+        j1_0.experience,
+        j1_0.location,
+        j1_0.salary,
+        j1_0.status,
+        j1_0.title,
+        a1_0.status 
+    from
+        applications a1_0 
+    join
+        candidate_profile c1_0 
+            on c1_0.id=a1_0.candidate_id 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    join
+        jobs j1_0 
+            on j1_0.id=a1_0.job_id 
+    where
+        a1_0.job_id=? 
+    order by
+        a1_0.ats_score desc
+2026-07-26T21:47:28.788+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name,
+        c1_0.website 
+    from
+        companies c1_0 
+    where
+        c1_0.id=?
+2026-07-26T21:47:28.788+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+2026-07-26T21:47:28.797+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.candidate_id,
+        s1_1.id,
+        s1_1.name 
+    from
+        candidate_skills s1_0 
+    join
+        skills s1_1 
+            on s1_1.id=s1_0.skill_id 
+    where
+        s1_0.candidate_id=?
+2026-07-26T21:47:28.800+05:30 DEBUG 29896 --- [jobpulse-backend-test] [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.candidate_id,
+        s1_1.id,
+        s1_1.name 
+    from
+        candidate_skills s1_0 
+    join
+        skills s1_1 
+            on s1_1.id=s1_0.skill_id 
+    where
+        s1_0.candidate_id=?
+]]></system-out>
+  </testcase>
+</testsuite>
